@@ -1,0 +1,23 @@
+body {
+    background-color: #769dab;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    top: 50%;
+    margin-top: -320px;
+}
+
+#container {
+    background-color: silver;
+    text-align: center;
+    display: grid;
+    grid-template-columns:  repeat(16, 40px);
+    grid-template-rows: repeat(16, 40px);
+}
+
+.gridBox {
+    border: 1px solid lightgrey;
+}
