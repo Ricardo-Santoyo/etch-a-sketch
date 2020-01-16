@@ -1,5 +1,19 @@
+@font-face {
+    font-family: rondo;
+    src: url(rondo.ttf);
+}
+
 body {
     background-color: #769dab;
+}
+
+#header {
+    text-align: center;
+    font-family: rondo;
+    color: #ffe6c9;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 50px;
 }
 
 .center {
