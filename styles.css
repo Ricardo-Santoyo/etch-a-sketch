@@ -5,10 +5,10 @@
 
 body {
     background-color: #769dab;
+    text-align: center;
 }
 
 #header {
-    text-align: center;
     font-family: rondo;
     color: #ffe6c9;
     font-size: 40px;
@@ -16,20 +16,17 @@ body {
     margin-top: 50px;
 }
 
-.center {
-    position: absolute;
-    left: 50%;
-    margin-left: -320px;
-    top: 50%;
-    margin-top: -320px;
+#displayBlock {
+    display: block;
 }
 
-#container {
-    background-color: silver;
+.center {
     text-align: center;
-    display: grid;
-    grid-template-columns:  repeat(16, 40px);
-    grid-template-rows: repeat(16, 40px);
+    margin: auto;
+}
+
+#clearGrid {
+    padding: 12px 10px;
 }
 
 .gridBox {
