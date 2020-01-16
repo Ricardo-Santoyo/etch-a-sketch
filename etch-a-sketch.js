@@ -4,4 +4,8 @@ const container = document.querySelector('#container');
     const gridBox = document.createElement('div');
         gridBox.classList.add('gridBox')
         container.appendChild(gridBox);
+
+        gridBox.addEventListener('mouseover', () => {
+            gridBox.classList.add('hover');
+        });
     };

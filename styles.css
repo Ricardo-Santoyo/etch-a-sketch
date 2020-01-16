@@ -21,3 +21,8 @@ body {
 .gridBox {
     border: 1px solid lightgrey;
 }
+
+.hover {
+    background-color: black;
+    border: 1px solid black;
+}
