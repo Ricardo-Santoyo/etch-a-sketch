@@ -18,15 +18,31 @@ body {
 
 #displayBlock {
     display: block;
-}
-
-.center {
     text-align: center;
     margin: auto;
 }
 
 #clearGrid {
     padding: 12px 10px;
+    margin-bottom: 40px;
+    color: #ffe6c9;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid rgb(53, 53, 53);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#clearGrid:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 1px 3px 3px #ffe6c9;
+}
+
+#container {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gridBox {
