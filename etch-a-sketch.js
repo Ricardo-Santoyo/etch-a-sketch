@@ -1,4 +1,8 @@
-gridNum = prompt('Choose a Grid Size between 0 and 101')
+let defaultGrid = createGrid(16);
+
+function createGrid(gridNum) {
+
+    input(gridNum);
 
 const container = document.querySelector('#container');
     container.style.backgroundColor = 'silver';
@@ -20,8 +24,16 @@ const container = document.querySelector('#container');
             gridBox.classList.add('hover');
         });
     };
+};
 
-    const clearGrid = document.querySelector('#clearGrid');
-    clearGrid.addEventListener('click', () => {
-        window.location.reload();
-    });
+const clearGrid = document.querySelector('#clearGrid');
+clearGrid.addEventListener('click', () => {
+    document.querySelector('#container').innerHTML = '';
+    createGrid(prompt('Choose a Grid Size between 0 and 101'));
+});
+
+function input(gridNum) {
+    if (gridNum < 1 || gridNum > 100 || isNaN(gridNum) == true) {
+        createGrid(prompt('Choose a Grid Size between 0 and 101'));
+    }
+}
