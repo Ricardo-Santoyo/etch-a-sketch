@@ -13,7 +13,7 @@ body {
     color: #ffe6c9;
     font-size: 40px;
     font-weight: normal;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #displayBlock {
@@ -53,4 +53,50 @@ body {
 .hover {
     background-color: black;
     border: 1px solid black;
+}
+
+#options {
+    margin-top: 40px;
+}
+
+#rgb {
+    padding: 31.6365px 20.8985px;
+    color: #ffe6c9;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid rgb(53, 53, 53);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin-right: 229.75px;
+    outline: 0;
+}
+
+#rgb:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 1px 3px 3px #ffe6c9;
+}
+
+#gradient {
+    padding: 31.625px 2px;
+    color: #ffe6c9;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid rgb(53, 53, 53);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin-left: 229.75px;
+    outline: 0;
+}
+
+#gradient:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 1px 3px 3px #ffe6c9;
 }
