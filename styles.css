@@ -47,12 +47,11 @@ body {
 }
 
 .gridBox {
-    border: 1px solid lightgrey;
+    cursor: crosshair;
 }
 
 .hover {
     background-color: black;
-    border: 1px solid black;
 }
 
 #options {
@@ -99,4 +98,8 @@ body {
     transform: scale(1.05);
     transition: box-shadow 0.3s;
     box-shadow: 0px 1px 3px 3px #ffe6c9;
+}
+
+#hoverRGB {
+    cursor: crosshair;
 }

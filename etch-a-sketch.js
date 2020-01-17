@@ -23,6 +23,15 @@ const container = document.querySelector('#container');
         gridBox.addEventListener('mouseover', () => {
             gridBox.classList.add('hover');
         });
+
+        const rgb = document.querySelector('#rgb');
+        rgb.addEventListener('click', () => {
+        gridBox.addEventListener('mouseover', () => {
+        gridBox.classList.remove('hover');
+        gridBox.classList.add('hoverRGB')
+        gridBox.style.backgroundColor = randomRGB();
+    });
+});
     };
 };
 
@@ -36,4 +45,10 @@ function input(gridNum) {
     if (gridNum < 1 || gridNum > 100 || isNaN(gridNum) == true) {
         createGrid(prompt('Choose a Grid Size between 0 and 101'));
     }
+}
+
+function randomRGB () {
+    return "rgb(" + Math.floor(Math.random() * 255)
+    + ", " + Math.floor(Math.random() * 255)
+    + ", " + Math.floor(Math.random() * 255) + ")";
 }
