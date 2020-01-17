@@ -58,7 +58,7 @@ body {
     margin-top: 40px;
 }
 
-#rgb {
+.rgb {
     padding: 31.6365px 20.8985px;
     color: #ffe6c9;
     font-weight: bold;
@@ -72,14 +72,14 @@ body {
     outline: 0;
 }
 
-#rgb:hover {
+.rgb:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: box-shadow 0.3s;
     box-shadow: 0px 1px 3px 3px #ffe6c9;
 }
 
-#gradient {
+.gradient {
     padding: 31.625px 2px;
     color: #ffe6c9;
     font-weight: bold;
@@ -93,7 +93,7 @@ body {
     outline: 0;
 }
 
-#gradient:hover {
+.gradient:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: box-shadow 0.3s;
@@ -102,4 +102,14 @@ body {
 
 #hoverRGB {
     cursor: crosshair;
+}
+
+.rgbSelected {
+    background-color: rgb(28, 159, 77);
+    border: 2px solid rgb(28, 159, 77);
+}
+
+.gradientSelected {
+    background-color: rgb(28, 159, 77);
+    border: 2px solid rgb(28, 159, 77);
 }
