@@ -30,7 +30,6 @@ function createGrid(gridNum) {
                 gradient.classList.remove('gradientSelected');
             gridBox.addEventListener('mouseover', () => {
                 gridBox.style.backgroundColor = randomRGB();
-                gridBox.style.opacity = "1";
             });
         });
 
@@ -42,6 +41,9 @@ function createGrid(gridNum) {
                 gridBox.style.backgroundColor = gradientValue(gridBox);
             });
         });
+
+        rgb.classList.remove('rgbSelected');
+        gradient.classList.remove('gradientSelected');
     };
 };
 
